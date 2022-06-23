@@ -24,3 +24,1012 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+* {
+    color: #6F746C;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-red {
+    color: red;
+}
+
+.color-black {
+    color: black !important;
+}
+
+.color-primary {
+    color: #190945 !important;
+}
+
+.color-secondary {
+    color: #C3A873 !important;
+}
+
+.ion-item-gray {
+    --ion-item-background: #c3c2c2;
+}
+
+.color-gray {
+    color: #c3c2c2 !important;
+}
+
+.ion-item-gray-2 {
+    --ion-item-background: #eeeeee;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.h1 {
+    height: 1rem !important;
+}
+
+.h2 {
+    height: 2rem !important;
+}
+
+.h2-5 {
+    height: 2.5rem !important;
+}
+
+.h3 {
+    height: 3rem !important;
+}
+
+.h4 {
+    height: 4rem !important;
+}
+
+.h5 {
+    height: 5rem !important;
+}
+
+.h6 {
+    height: 6rem !important;
+}
+
+.h7 {
+    height: 7rem !important;
+}
+
+.h8 {
+    height: 8rem !important;
+}
+
+.h9 {
+    height: 9rem !important;
+}
+
+.h10 {
+    height: 10rem !important;
+}
+
+.h11 {
+    height: 11rem !important;
+}
+
+.h12 {
+    height: 12rem !important;
+}
+
+.h13 {
+    height: 13rem !important;
+}
+
+.h14 {
+    height: 14rem !important;
+}
+
+.hw10 {
+    height: 10rem !important;
+    width: 10rem !important;
+}
+
+.hw8 {
+    height: 8rem !important;
+    width: 8rem !important;
+}
+
+.hw7 {
+    height: 7rem !important;
+    width: 7rem !important;
+}
+
+.h20 {
+    height: 20rem !important;
+}
+
+.w1 {
+    width: 1rem !important;
+}
+
+.w2 {
+    width: 2rem !important;
+}
+
+.w2-5 {
+    width: 2.5rem !important;
+}
+
+.w3 {
+    width: 3rem !important;
+}
+
+.w4 {
+    width: 4rem !important;
+}
+
+.w5 {
+    width: 5rem !important;
+}
+
+.w6 {
+    width: 6rem !important;
+}
+
+.w7 {
+    width: 7rem !important;
+}
+
+.w8 {
+    width: 8rem !important;
+}
+
+.w9 {
+    width: 9rem !important;
+}
+
+.w10 {
+    width: 10rem !important;
+}
+
+.w11 {
+    width: 11rem !important;
+}
+
+.w12 {
+    width: 12rem !important;
+}
+
+.w13 {
+    width: 13rem !important;
+}
+
+.w14 {
+    width: 14rem !important;
+}
+
+.w-10 {
+    width: 100% !important;
+}
+
+.w-20 {
+    width: 100% !important;
+}
+
+.w-30 {
+    width: 100% !important;
+}
+
+.w-40 {
+    width: 100% !important;
+}
+
+.w-50 {
+    width: 100% !important;
+}
+
+.w-60 {
+    width: 100% !important;
+}
+
+.w-70 {
+    width: 100% !important;
+}
+
+.w-80 {
+    width: 100% !important;
+}
+
+.w-90 {
+    width: 100% !important;
+}
+
+.w100 {
+    width: 100% !important;
+}
+
+.h100 {
+    height: 100% !important;
+}
+
+// backgrounds //
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-light {
+    background-color: var(--ion-color-light);
+}
+
+.bg-dark {
+    background-color: var(--ion-color-dark);
+}
+
+.bg-primary {
+    background-color: var(--ion-color-primary);
+}
+
+.bg-primary-plus {
+    background-color: #0d266a;
+}
+
+.bg-secondary {
+    background-color: var(--ion-color-secondary);
+}
+
+.bg-tertiary {
+    background-color: var(--ion-color-tertiary);
+}
+
+.bg-profile {
+    background-image: linear-gradient(135deg, var(--ion-color-dark), var(--ion-color-primary))
+}
+
+.bg-main {
+    background-image: linear-gradient(-135deg, var(--ion-color-medium), var(--ion-color-light))
+}
+
+.bg-gray {
+    background-color: #e4e4e4;
+}
+
+.item-gray {
+    --ion-item-background: #bbbbbb;
+}
+
+.bg-dark-gray {
+    background-color: #555 !important;
+}
+
+// Helpers //
+.w100 {
+    width: 100%;
+}
+
+.fwNormal {
+    font-weight: normal !important;
+}
+
+.bold,
+.fw500 {
+    font-weight: 500 !important;
+}
+
+.fw700 {
+    font-weight: 700 !important;
+}
+
+.text06 {
+    font-size: .6rem !important;
+}
+
+.text07 {
+    font-size: .7rem !important;
+}
+
+.text08 {
+    font-size: .8rem !important;
+}
+
+.text09 {
+    font-size: .9rem !important;
+}
+
+.text1 {
+    font-size: 1rem !important;
+}
+
+.text12 {
+    font-size: 1.2rem;
+}
+
+.text15 {
+    font-size: 1.5rem;
+}
+
+.text20 {
+    font-size: 2rem !important;
+}
+
+.text25 {
+    font-size: 2.5rem !important;
+}
+
+.text30 {
+    font-size: 3rem;
+}
+
+.text40 {
+    font-size: 4rem;
+}
+
+.text50 {
+    font-size: 5rem;
+}
+
+.pl-30 {
+    padding-left: 3rem !important;
+}
+
+.pl-20 {
+    padding-left: 2rem !important;
+}
+
+.pl-10 {
+    padding-left: 1rem !important;
+}
+
+.pl-05 {
+    padding-left: .5rem !important;
+}
+
+.pl-02 {
+    padding-left: .2rem !important;
+}
+
+.pstart-0 {
+    --padding-start: 0rem !important;
+}
+
+.pr-30 {
+    padding-right: 3rem !important;
+}
+
+.pr-20 {
+    padding-right: 2rem !important;
+}
+
+.pr-10 {
+    padding-right: 1rem !important;
+}
+
+.pr-05 {
+    padding-right: .5rem !important;
+}
+
+.pr-02 {
+    padding-right: .2rem !important;
+}
+
+.pt-30 {
+    padding-top: 3rem !important;
+}
+
+.pt-20 {
+    padding-top: 2rem !important;
+}
+
+.pt-10 {
+    padding-top: 1rem !important;
+}
+
+.pt-05 {
+    padding-top: .5rem !important;
+}
+
+.pt-02 {
+    padding-top: .2rem !important;
+}
+
+.pb-30 {
+    padding-bottom: 3rem !important;
+}
+
+.pb-20 {
+    padding-bottom: 2rem !important;
+}
+
+.pb-10 {
+    padding-bottom: 1rem !important;
+}
+
+.pb-05 {
+    padding-bottom: .5rem !important;
+}
+
+.pb-02 {
+    padding-bottom: .2rem !important;
+}
+
+.py-30 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.py-20 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.py-15 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+
+.py-10 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.py-05 {
+    padding-top: .5rem !important;
+    padding-bottom: .5rem !important;
+}
+
+.py-02 {
+    padding-top: .2rem !important;
+    padding-bottom: .2rem !important;
+}
+
+.px-30 {
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+}
+
+.px-20 {
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+}
+
+.px-15 {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+
+.px-10 {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+
+.px-05 {
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+}
+
+.px-02 {
+    padding-right: .2rem !important;
+    padding-left: .2rem !important;
+}
+
+.p-30 {
+    padding: 3rem !important;
+}
+
+.p-20 {
+    padding: 2rem !important;
+}
+
+.p-10 {
+    padding: 1rem !important;
+}
+
+.p-0 {
+    padding: 0rem !important;
+}
+
+.p-05 {
+    padding: .5rem !important;
+}
+
+.p-02 {
+    padding: .2rem !important;
+}
+
+.mb-40 {
+    margin-bottom: 4rem !important;
+}
+
+.mb-30 {
+    margin-bottom: 3rem !important;
+}
+
+.mb-20 {
+    margin-bottom: 2rem !important;
+}
+
+.mb-15 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mb-12 {
+    margin-bottom: 1.2rem !important;
+}
+
+.mb-10 {
+    margin-bottom: 1rem !important;
+}
+
+.mb-05 {
+    margin-bottom: .5rem !important;
+}
+
+.adjust {
+    --margin-bottom: 0px;
+    --margin-top: 0px;
+    --padding-start: 0px;
+}
+
+.mb-02 {
+    margin-bottom: .2rem !important;
+}
+
+.mb-0 {
+    margin-bottom: 0rem !important;
+}
+
+.mt-40 {
+    margin-top: 4rem !important;
+}
+
+.mt-30 {
+    margin-top: 3rem !important;
+}
+
+.mt-20 {
+    margin-top: 2rem !important;
+}
+
+.mt-15 {
+    margin-top: 1.5rem !important;
+}
+
+.mt-12 {
+    margin-top: 1.2rem !important;
+}
+
+.mt-10 {
+    margin-top: 1rem !important;
+}
+
+.mt-05 {
+    margin-left: .5rem !important;
+}
+
+.mt-02 {
+    margin-left: .2rem !important;
+}
+
+.mtt-05 {
+    margin-top: .5rem !important;
+}
+
+.mtt-02 {
+    margin-top: .2rem !important;
+}
+
+.ml-30 {
+    margin-left: 3rem !important;
+}
+
+.ml-20 {
+    margin-left: 2rem !important;
+}
+
+.ml-10 {
+    margin-left: 1rem !important;
+}
+
+.ml-05 {
+    margin-left: .5rem !important;
+}
+
+.ml-02 {
+    margin-left: .2rem !important;
+}
+
+.mr-30 {
+    margin-right: 3rem !important;
+}
+
+.mr-20 {
+    margin-right: 2rem !important;
+}
+
+.mr-10 {
+    margin-right: 1rem !important;
+}
+
+.mr-05 {
+    margin-right: .5rem !important;
+}
+
+.mr-02 {
+    margin-right: .2rem !important;
+}
+
+.my-30 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.my-20 {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.my-10 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.my-05 {
+    margin-top: .5rem !important;
+    margin-bottom: .5rem !important;
+}
+
+.my-02 {
+    margin-top: .2rem !important;
+    margin-bottom: .2rem !important;
+}
+
+.mx-30 {
+    margin-right: 3rem !important;
+    margin-left: 3rem !important;
+}
+
+.mx-20 {
+    margin-right: 2rem !important;
+    margin-left: 2rem !important;
+}
+
+.mx-10 {
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+}
+
+.mx-05 {
+    margin-right: .5rem !important;
+    margin-left: .5rem !important;
+}
+
+.mx-02 {
+    margin-right: .2rem !important;
+    margin-left: .2rem !important;
+}
+
+.m-auto {
+    margin: auto !important;
+}
+
+.medium10 {
+    width: 10px;
+    height: 10px;
+}
+
+.medium20 {
+    width: 20px;
+    height: 20px;
+}
+
+.medium30 {
+    width: 30px;
+    height: 30px;
+}
+
+.medium40 {
+    width: 40px;
+    height: 40px;
+}
+
+.medium {
+    width: 50px;
+    height: 50px;
+}
+
+.medium60 {
+    width: 60px;
+    height: 60px;
+}
+
+.medium70 {
+    width: 70px;
+    height: 70px;
+}
+
+.medium80 {
+    width: 80px;
+    height: 80px;
+}
+
+.medium90 {
+    width: 90px;
+    height: 90px;
+}
+
+.large {
+    width: 100px;
+    height: 100px;
+}
+
+.large12 {
+    width: 120px;
+    height: 120px;
+}
+
+.large2 {
+    width: 200px;
+    height: 200px;
+}
+
+.large3 {
+    width: 300px;
+    height: 300px;
+}
+
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-blue {
+    color: #031A6E !important;
+}
+
+.text-red {
+    color: #E6492D !important;
+}
+
+.text-green {
+    color: #34AA44 !important;
+}
+
+.text-black {
+    color: #000000 !important;
+}
+
+.text-blue-fainted {
+    color: rgba(3, 26, 110, 0.3) !important;
+}
+
+.text-gray-2 {
+    color: #999999 !important;
+}
+
+.text-light {
+    color: #fff;
+}
+
+.text-primary {
+    color: var(--ion-color-primary);
+}
+
+.text-secondary {
+    color: var(--ion-color-secondary);
+}
+
+.text-dark {
+    color: var(--ion-color-dark);
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.no-transform {
+    text-transform: none !important;
+    font-weight: normal !important;
+}
+
+.space-between {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.button-primary {
+    background: var(--ion-color-secondary);
+    border-radius: 16px;
+    color: var(--ion-color-primary);
+    height: 45px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.05);
+}
+
+.button-primary-2 {
+    background: var(--ion-color-secondary);
+    border-radius: 10px;
+    color: #ffffff;
+    height: 45px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.05);
+}
+
+.button-primary-sharp {
+    background: var(--ion-color-primary);
+    border-radius: 3px;
+    color: #ffffff;
+    height: 45px;
+    box-shadow: 0px 0px 2px 1px var(--ion-color-primary);
+}
+
+.button-primary-sharp_ {
+    background: var(--ion-color-primary);
+    border-radius: 10px;
+    color: #ffffff;
+    height: 45px;
+    box-shadow: 0px 0px 2px 1px var(--ion-color-primary);
+}
+
+.button-primary-sharp2 {
+    background: var(--ion-color-primary);
+    border-radius: 10px;
+    color: #ffffff;
+    height: 54px;
+    box-shadow: 0px 0px 2px 1px var(--ion-color-primary);
+}
+
+.button-white {
+    background: #ffffff;
+    border-radius: 5px;
+    color: #190945;
+}
+
+.button-outline-white {
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.outline-dafault {
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.outline-primary {
+    border: 1px solid var(--ion-color-primary) !important;
+}
+
+.form-error {
+    color: var(--ion-color-danger);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.arrow {
+    color: #254A42;
+    font-size: 1.5em;
+}
+
+.bg-none {
+    --background: transparent;
+}
+
+.app-bg {
+    --background: #fafafa;
+}
+
+.app-bg-white {
+    --background: #ffffff;
+}
+
+.rounded-5 {
+    border-radius: 5px;
+}
+
+.rounded-10 {
+    border-radius: 10px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.space-item-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-v-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-space-around {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.item-center {
+    display: block;
+    justify-content: center;
+
+}
+
+.item-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-h-center {
+    display: flex;
+    align-items: center;
+}
+
+ion-button {
+    --width: 100%;
+    --margin: 10px 0;
+    --border-radius: 5px;
+    --cursor: pointer;
+    color: #fff;
+    display: block;
+    border: 0px solid rgba(156, 84, 84, 0.1);
+    border-bottom-width: 2px;
+    height: 50px;
+}
+
+.error-toast-scheme {
+    --background: none;
+    --border: 2px solid red !important;
+    color: #254A42;
+}
+
+.success-toast-scheme {
+    --background: #254A42;
+    color: #fff;
+}
+
+.inputConfig {
+    height: 3rem;
+    color: var(--ion-color-primary);
+    display: flex;
+    background: #ffffff;
+    border-radius: 16px;
+    font-size: 0.8rem;
+}
+
+.error-toast-scheme::part(container) {
+    background-color: #ffffff;
+    color: #000000;
+    border-left: 2px solid #D00000;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.error-toast-scheme::part(button) {
+    background-color: #ffffff;
+    color: #000000;
+    position: absolute !important;
+    right: -1%;
+    top: -12%;
+}
+
+.success-toast-scheme::part(container) {
+    background-color: #ffffff;
+    color: #000000;
+    border-left: 2px solid #20A000;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.success-toast-scheme::part(button) {
+    background-color: #ffffff;
+    color: #000000;
+    position: absolute !important;
+    right: -1%;
+    top: -12%;
+}

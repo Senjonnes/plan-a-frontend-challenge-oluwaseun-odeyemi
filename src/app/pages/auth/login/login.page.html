@@ -1,9 +1,49 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="app-bg">
+  <div class="parent">
 
-<ion-content>
+    <div class="w100 px-10">
+      <ion-grid>
+        <ion-row>
+          <form [formGroup]="form" class="text1 w100 loginContainer" (ngSubmit)="login()">
+
+            <div class="text-white text12 fw700 item-v-center py-15">Sign in</div>
+
+            <ng-container>
+              <ion-item lines="none"
+                class="animated fadeInUp ion-no-padding inputConfig ion-margin-top outline-dafault">
+                <ion-label class="icon-bg pl-10">
+                  <ion-icon src="../assets/icon/user.svg" item-start class="text1"></ion-icon>
+                </ion-label>
+                <ion-input color="primary" type="text" class="pl-02 py-05" placeholder="Username"
+                  formControlName="username"></ion-input>
+              </ion-item>
+              <small class="form-error" *ngIf="isInvalid('username')">{{ getErrorMessage(form.get("username"),
+                "Username")}}</small>
+            </ng-container>
+
+            <ng-container>
+              <ion-item lines="none"
+                class="animated fadeInUp ion-no-padding ion-margin-top outline-dafault inputConfig mt-15">
+                <ion-label class="icon-bg pl-10">
+                  <ion-icon src="../assets/icon/lock2.svg" item-start class="text1"></ion-icon>
+                </ion-label>
+                <ion-input color="primary" type="password" class="pl-02 py-05" placeholder="Password"
+                  formControlName="password"></ion-input>
+              </ion-item>
+              <small class="form-error" *ngIf="isInvalid('password')">{{ getErrorMessage(form.get("password"),
+                "Password")}}</small>
+            </ng-container>
+
+            <div class="my-20">
+              <ion-button class="no-transform button-primary" fill="clear" expand="block" type="submit"
+                [disabled]="form.invalid">Sign in
+              </ion-button>
+            </div>
+          </form>
+        </ion-row>
+
+      </ion-grid>
+    </div>
+  </div>
 
 </ion-content>

@@ -1,0 +1,43 @@
+.parent {
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 1em;
+    line-height: 22px;
+    color: #1D2628;
+}
+
+.terms {
+    text-align: justify;
+    line-height: 24px;
+}
+
+.loginContainer {
+    background: var(--ion-color-primary);
+    padding: 10% 10% 0% !important;
+    box-shadow: 0px 3px 5px 2px var(--ion-color-primary);
+}
+
+.authCheck {
+    height: 14px;
+    width: 14px;
+}
+
+.socialMedia {
+    display: flex;
+    height: 20px;
+    width: 100%;
+    justify-content: flex-end;
+    margin: 5% 0%;
+    padding-right: 10%;
+
+    img {
+        height: 20px;
+    }
+}
