@@ -1,0 +1,7 @@
+{
+  "name": "plan-a-frontend-challenge-oluwaseun-odeyemi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
