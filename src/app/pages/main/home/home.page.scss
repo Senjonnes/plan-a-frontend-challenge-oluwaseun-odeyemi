@@ -1,27 +1,24 @@
-#container {
-  text-align: center;
+ion-content {
+  --background: var(--ion-color-primary) !important;
+  position: relative;
+}
 
+.menu-container {
+  margin-top: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.logout {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 0px;
+  z-index: 1;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+.button-logout {
+  background: var(--ion-color-secondary) !important;
+  color: #ffffff;
+  height: 45px;
+  width: 100%;
+  margin: 0px;
 }

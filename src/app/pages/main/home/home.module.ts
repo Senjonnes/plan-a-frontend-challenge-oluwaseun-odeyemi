@@ -15,6 +15,6 @@ import { MovieCardComponent } from 'src/app/components/movie-card/movie-card.com
     IonicModule,
     HomePageRoutingModule,
   ],
-  declarations: [HomePage, MovieCardComponent]
+  declarations: [HomePage]
 })
 export class HomePageModule { }

@@ -8,6 +8,7 @@ import { catchError } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 import { API, AUTH } from '../shared/api';
 import { Storage } from '@capacitor/storage';
+import { Router } from '@angular/router';
 const ACCESS_TOKEN_KEY = 'access';
 
 
@@ -25,6 +26,7 @@ export class AuthService {
   constructor(
     public http: HttpClient,
     public handlers: Handlers,
+    private router: Router,
   ) {
     this.httpErrorHandler = new HttpErrorHandler(this.errorService);
     this.loadToken();
@@ -89,7 +91,12 @@ export class AuthService {
     )
   }
 
-  // Store a new access token
+  async logout() {
+    await Storage.clear();
+    this.isAuthenticated.next(false);
+    this.router.navigate(['/login']);
+  }
+
   storeAccessTokens(tokens) {
     this.currentAccessToken = tokens.request_token;
     const storeAccess = Storage.set({ key: ACCESS_TOKEN_KEY, value: tokens.request_token });

@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="px-05 background-primary no-border">
+    <ion-buttons slot="start"></ion-buttons>
+    <ion-title>
+      Movies
+    </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button class="toggler" fill="clear" color="light" (click)="toggleMenu()">
+        <ion-icon color="light" class="harmbuger" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ng-container *ngFor="let m of movies">
+    <app-movie-card [movie]="m"></app-movie-card>
+  </ng-container>
+</ion-content>

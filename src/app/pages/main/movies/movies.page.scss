@@ -1,0 +1,16 @@
+.background-primary {
+    --background: var(--ion-color-primary);
+    background: var(--ion-color-primary);
+}
+
+.no-border {
+    border-width: 0px !important;
+    --border-width: 0px !important;
+}
+
+.toggler {
+    background: #67817b;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 10px;
+}

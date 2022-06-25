@@ -19,6 +19,10 @@ const routes: Routes = [
     redirectTo: 'login',
     pathMatch: 'full'
   },
+  // {
+  //   path: 'movies',
+  //   loadChildren: () => import('./pages/main/movies/movies.module').then( m => m.MoviesPageModule)
+  // },
 ];
 
 @NgModule({

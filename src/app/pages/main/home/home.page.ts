@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { Movie } from 'src/app/models/Movies';
-import { MovieService } from 'src/app/services/movie.service';
+import { Router } from '@angular/router';
+import { MenuController } from '@ionic/angular';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-home',
@@ -8,21 +9,35 @@ import { MovieService } from 'src/app/services/movie.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  movies: Movie[] = [];
-
-  constructor(private movie: MovieService) { }
+  constructor(private menuCtrl: MenuController,
+    private router: Router,
+    private auth: AuthService,
+  ) { }
 
   ngOnInit() {
-    this.getLatestMovies();
+
   }
 
-  getLatestMovies() {
-    this.movie.getLatestMovies().subscribe((res: any) => {
-      console.log(res);
-      this.movies = res?.results
-    }, err => {
-      console.log(err);
-    })
+  async ionViewWillEnter() {
+    this.menuCtrl.enable(true, 'home-menu');
+  }
+
+  ionViewWillLeave() {
+    this.menuCtrl.enable(false, 'home-menu');
+  }
+
+  toggleMenu(m) {
+    this.menuCtrl.toggle('home-menu');
+    if (m && m.url === '/home') {
+      this.router.navigate([m.url]);
+    } else if (m && m.url) {
+      this.router.navigate([m.url]);
+    }
+  }
+
+  async logout() {
+    this.menuCtrl.toggle('home-menu');
+    await this.auth.logout();
   }
 
 }
