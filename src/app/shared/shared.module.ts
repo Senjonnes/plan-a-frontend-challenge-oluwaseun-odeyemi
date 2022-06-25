@@ -6,6 +6,7 @@ import { HttpErrorHandler } from './error/http-error-handler.service';
 import { Forms } from './forms';
 import { Handlers } from './handlers';
 import { Display } from './display';
+import { IsLoggedIn } from './isLoggedIn';
 
 
 
@@ -20,7 +21,8 @@ import { Display } from './display';
         FormBuilder,
         HttpErrorHandler,
         Handlers,
-        Display
+        Display,
+        IsLoggedIn
     ]
 
 })
