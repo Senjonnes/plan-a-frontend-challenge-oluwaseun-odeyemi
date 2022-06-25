@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpClientModule, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { HttpErrorHandler } from '../shared/error/http-error-handler.service';
 import { ErrorService } from '../shared/error/error.service';
 import { Handlers } from '../shared/handlers';
 import { BehaviorSubject, from, throwError } from 'rxjs';
-import { retry, catchError, map, timeout } from 'rxjs/operators';
+import { catchError } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 import { API, AUTH } from '../shared/api';
 import { Storage } from '@capacitor/storage';
+import { Router } from '@angular/router';
 const ACCESS_TOKEN_KEY = 'access';
 
 
@@ -25,11 +26,11 @@ export class AuthService {
   constructor(
     public http: HttpClient,
     public handlers: Handlers,
+    private router: Router,
   ) {
     this.httpErrorHandler = new HttpErrorHandler(this.errorService);
     this.loadToken();
   }
-
 
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
@@ -90,7 +91,12 @@ export class AuthService {
     )
   }
 
-  // Store a new access token
+  async logout() {
+    await Storage.clear();
+    this.isAuthenticated.next(false);
+    this.router.navigate(['/login']);
+  }
+
   storeAccessTokens(tokens) {
     this.currentAccessToken = tokens.request_token;
     const storeAccess = Storage.set({ key: ACCESS_TOKEN_KEY, value: tokens.request_token });

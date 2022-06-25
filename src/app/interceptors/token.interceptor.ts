@@ -65,7 +65,6 @@ export class TokenInterceptor implements HttpInterceptor {
             // First, get a new access token
             return this.auth.getToken().pipe(
                 switchMap((tokens: { expires_at, request_token, success }) => {
-                    console.log(tokens);
                     if (tokens && tokens.success) {
                         // Store the new token
                         const accessToken = tokens.request_token;

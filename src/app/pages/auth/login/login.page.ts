@@ -26,6 +26,7 @@ export class LoginPage implements OnInit {
   async login() {
     await this.display.loader();
     await this.auth.authenticate(this.form.value).then(async res => {
+      await this.display.removeLoader();
       await this.router.navigateByUrl('/home', { replaceUrl: true });
     }, async err => {
       this.display.showErrorToaster(err?.error?.status_message ?? "An error has occured");
